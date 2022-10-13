@@ -81,6 +81,9 @@
                               <li class="nav-item">
                                  <a class="nav-link" style="color: black;" href="#contact">Contact</a>
                               </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" style="color: black;font-weight: bold;" target="_blank" href="https://github.com/Liar-zzy/Benchmarking-Ultra-High-Definition-Single-Image-Reflection-Removal">Code</a>
+                              </li>
                            </ul>
                         </div>
                      </nav>
@@ -218,9 +221,9 @@
             </div>
          </div>
          <div class="row">
-            
 
-            
+
+
             <div class="col-md-12" style="text-align: center;">
                <h2>UHDRR 4K Dataset</h2>
             </div class="col-md-12">
@@ -338,7 +341,7 @@
             <div class="col-md-12" style="text-align: center;">
                <hr style="background-color:black" />
             </div class="col-md-12">
-            
+
             <div class="col-md-12" style="text-align: center;">
                <h2>CDR Dataset</h2>
             </div class="col-md-12">
@@ -448,7 +451,7 @@
                         <td><i><u>20.50</u></i></td>
                         <td>0.731</td>
                      </tr>
-                     <tr> 
+                     <tr>
                         <td>CoRRN</td>
                         <td>20.22</td>
                         <td><u><i>0.774</i></u></td>
@@ -648,43 +651,56 @@
                </table>
             </div>
             <!-- <div class="col-md-1"></div> -->
-
-
+         </div>
+      </div>
+   </div>
+   <div id="bibtex" class="about">
+      <div class="container">
+         <div class="row">
             <div class="col-md-12">
-               <a id="bibtex" class="read_more" style="color: white;font-size:30px">BibTeX</a>
+               <div class="titlepage">
+                  <h2>BibTeX</h2>
+               </div>
             </div>
-            <div class="col-md-12" style="text-align: center;">
-               <row>
-                  <br>
-                  <h3>
-                     Please <button onclick="copyText(this)"
-                        style="color: white;background-color: black;border-radius:30px;"> &nbsp;&nbsp;cite
-                        &nbsp;</button>
-                     our work if you use data from this site.
-                  </h3>
-               </row>
-               <row>
+         </div>
+         <!-- <div class="col-md-12">
+             <a id="bibtex" class="read_more" style="color: white;font-size:30px">BibTeX</a>
+            <a id="bibtex">BibTeX</a>
 
-               </row>
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-               <pre id="bib" style="text-align: left">
-                  @article{1,
+         </div> -->
+         <div class="col-md-12" style="text-align: center;">
+            <row>
+               <br>
+               <h3 style="color:white">
+                  Please <button onclick="copyText(this)"
+                     style="color: white;background-color: black;border-radius:30px;"> &nbsp;&nbsp;cite
+                     &nbsp;</button>
+                  our work if you use data from this site.
+               </h3>
+            </row>
+            <row>
+
+            </row>
+         </div>
+         <div class="col-md-2"></div>
+         <div class="col-md-8">
+            <pre id="bib" style="text-align: center;color: white;font-size: large;">
+                  <!-- @article{1,
                      title={11},
                      author={1},
                      journal={1},
                      year={2022}
-                   }
+                   } -->
+                   To Be Released.
                </pre>
-            </div>
-            <div class="col-md-2"></div>
          </div>
+         <div class="col-md-2"></div>
       </div>
    </div>
+
    <!-- end best -->
    <!-- request -->
-   <div id="contact" class="request">
+   <div id="contact" class="best">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -754,10 +770,10 @@
                   <a href="lujf@njust.edu.cn" style="font-size: 20px;">lujf@njust.edu.cn</a>
                   <!-- <br>
                   <a href="" style="font-size: 20px;">Personal Website</a> -->
-                  
+
                </div>
             </div>
-            
+
          </div>
       </div>
    </div>
@@ -789,7 +805,6 @@
 </body>
 
 <script>
-
    function copyText(obj) {
       //执行复制
       let pre = document.getElementById('bib')
@@ -807,14 +822,12 @@
       input.select()
       try {
          document.execCommand('copy')
-      }
-      catch (err) {
+      } catch (err) {
 
       }
       alert("Copy Success");
       document.body.removeChild(input)
    }
-
 </script>
 
 </html>
